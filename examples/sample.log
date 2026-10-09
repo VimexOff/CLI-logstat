@@ -1,0 +1,20 @@
+192.168.1.10 - - [10/Oct/2023:13:02:11 +0000] "GET / HTTP/1.1" 200 512 "-" "Mozilla/5.0"
+192.168.1.11 - - [10/Oct/2023:13:05:42 +0000] "GET /index.html HTTP/1.1" 200 2326 "-" "Mozilla/5.0"
+192.168.1.10 - - [10/Oct/2023:13:07:03 +0000] "GET /api/users HTTP/1.1" 200 1024 "-" "curl/8.4.0"
+10.0.0.5 - - [10/Oct/2023:13:15:20 +0000] "POST /api/login HTTP/1.1" 302 - "https://example.com/login" "Mozilla/5.0"
+10.0.0.5 - - [10/Oct/2023:13:16:01 +0000] "GET /api/users HTTP/1.1" 200 1024 "-" "Mozilla/5.0"
+192.168.1.12 - - [10/Oct/2023:13:40:33 +0000] "GET /api/orders HTTP/1.1" 500 128 "-" "python-requests/2.31"
+this line is garbage and should be skipped
+192.168.1.10 - - [10/Oct/2023:14:01:15 +0000] "GET / HTTP/1.1" 200 512 "-" "Mozilla/5.0"
+172.16.0.3 - - [10/Oct/2023:14:05:09 +0000] "GET /favicon.ico HTTP/1.1" 404 0 "-" "Mozilla/5.0"
+192.168.1.11 - - [10/Oct/2023:14:10:47 +0000] "GET /api/users HTTP/1.1" 200 1024 "-" "curl/8.4.0"
+10.0.0.5 - - [10/Oct/2023:14:22:30 +0000] "POST /api/orders HTTP/1.1" 502 157 "-" "Mozilla/5.0"
+10.0.0.5 - - [10/Oct/2023:14:23:02 +0000] "POST /api/orders HTTP/1.1" 503 157 "-" "Mozilla/5.0"
+
+172.16.0.3 - - [10/Oct/2023:14:30:18 +0000] "GET /admin HTTP/1.1" 403 199 "-" "sqlmap/1.7"
+192.168.1.12 - - [10/Oct/2023:15:00:00 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0"
+192.168.1.10 - - [10/Oct/2023:15:12:44 +0000] "GET /api/users HTTP/1.1" 200 1024 "-" "Mozilla/5.0"
+10.0.0.7 - - [10/Oct/2023:15:30:05 +0000] "DELETE /api/orders/42 HTTP/1.1" 500 98 "-" "curl/8.4.0"
+192.168.1.11 - - [10/Oct/2023:15:45:51 +0000] "GET /index.html HTTP/1.1" 200 2326 "-" "Mozilla/5.0"
+192.168.1.10 - - [10/Oct/2023:16:10:00 +0000] "GET /broken
+10.0.0.7 - - [10/Oct/2023:16:05:27 +0000] "GET /api/orders HTTP/1.1" 200 2048 "-" "Mozilla/5.0"
